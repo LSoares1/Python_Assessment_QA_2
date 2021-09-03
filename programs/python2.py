@@ -69,7 +69,8 @@ def two(num):
 
 
 def three(a):
-    return
+    total = a + 11 * a + 111 * a + 1111 * a
+    return total
 
     # <QUESTION 4>
 
@@ -117,7 +118,12 @@ def four(string1, string2):
 
 
 def five():
-    return
+    evenList = []
+    for i in range(0,5):
+        n = random.randrange(100,200,2)
+        evenList.append(n) 
+    return evenList
+print(five())
 
     # <QUESTION 6>
 
