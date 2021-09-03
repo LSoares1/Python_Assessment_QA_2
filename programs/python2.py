@@ -32,7 +32,14 @@ import random
 
 
 def one(string):
-    return
+    newList = []
+    stringList = list(string)
+    for i in stringList:
+        for n in range(0,3):
+            newList.append(i)
+    newString = ''.join(newList)
+    return newString
+print(one("The"))
 
     # <QUESTION 2>
 
@@ -240,4 +247,5 @@ def nine(string1, string2):
 
 
 def ten(a, b):
+
     return
