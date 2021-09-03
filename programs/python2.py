@@ -174,7 +174,16 @@ def six(string):
 
 
 def seven(a, b, c):
-    return
+    numList = [a,b,c]
+    numList.sort()
+    diffMS = numList[1] - numList[0]
+    diffLM = numList[2] - numList[1]
+    if diffLM == diffMS:
+        return True
+    else:
+        return False
+    
+
 
     # <QUESTION 8>
 
