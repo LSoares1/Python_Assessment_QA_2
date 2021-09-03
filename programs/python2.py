@@ -281,5 +281,16 @@ def nine(string1, string2):
 
 
 def ten(a, b):
+    rowList = []
+    colList = []
+    for i in range(0,b):
 
-    return
+        for j in range(0,a):
+
+            rowList.append(i*j)
+        
+        
+    
+
+    return rowList
+print(ten(5,4))
