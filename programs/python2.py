@@ -123,7 +123,7 @@ def five():
         n = random.randrange(100,200,2)
         evenList.append(n) 
     return evenList
-print(five())
+
 
     # <QUESTION 6>
 
@@ -143,7 +143,13 @@ print(five())
 
 
 def six(string):
-    return
+    string =string.lower()
+    last2 = string[-2:]
+    if last2 == "py":
+        return True
+    else:
+        return False
+
 
     # <QUESTION 7>
 
