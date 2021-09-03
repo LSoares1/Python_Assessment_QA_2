@@ -58,8 +58,16 @@ def one(string):
 
 
 def two(num):
+    divList = []
+    for i in range(num,0,-1):
+        if num%i == 0:
+            divList.append(i)
+    if len(divList) == 2:
+        return True
+    else:
+        return False
 
-    return
+    return divList
 
     # <QUESTION 3>
 
