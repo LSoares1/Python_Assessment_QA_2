@@ -39,7 +39,7 @@ def one(string):
             newList.append(i)
     newString = ''.join(newList)
     return newString
-print(one("The"))
+
 
     # <QUESTION 2>
 
@@ -58,6 +58,7 @@ print(one("The"))
 
 
 def two(num):
+
     return
 
     # <QUESTION 3>
@@ -107,7 +108,15 @@ def three(a):
 
 
 def four(string1, string2):
-    return
+    mergeList = []
+    list1 = list(string1)
+    list2 = list(string2)
+    for n in range(0,len(list1)):
+        mergeList.append(list1[n])
+        mergeList.append(list2[n])  
+
+    mergeString = ''.join(mergeList)       
+    return mergeString
 
     # <QUESTION 5>
 
@@ -209,6 +218,8 @@ def seven(a, b, c):
 
 
 def eight(string, num):
+
+    
     return
 
     # <QUESTION 9>
@@ -227,8 +238,17 @@ def eight(string, num):
 
 
 def nine(string1, string2):
-    # make sure string1 is the shortest of the two
-    return
+    s1List = list(string1)
+    s2List = list(string2)
+    for i in s1List:
+        for n in s2List:
+            if i == n:
+                s1List.remove()
+            
+    return s1List, s2List
+    
+
+
 
     # <QUESTION 10>
 
