@@ -226,9 +226,15 @@ def seven(a, b, c):
 
 
 def eight(string, num):
-
+    strList = list(string)
+    strLen = len(string)
+    startPos = int((strLen-num)/2)
     
-    return
+    for i in range(num,0,-1):
+        del strList[startPos]
+    newStr = ''.join(strList)
+    return newStr
+
 
     # <QUESTION 9>
 
